@@ -20,6 +20,7 @@
   "dependencies": {
     "@koa/cors": "^2.2.3",
     "bcryptjs": "^2.4.3",
+    "csrf": "^3.0.6",
     "jsonwebtoken": "^8.5.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
