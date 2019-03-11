@@ -10,14 +10,14 @@ pm2 start
 
 # api
 
-name | payload | describe
------- | ------ | ------
-register | {username: '', password: '', roles: []} | register a new user
-login | {username: '', password: ''} | login
-users |  | get all users
+path | method | payload | describe
+------ | ------ | ------ | ------
+/register | POST | {username: '', password: '', roles: []} | register a new user
+/login | POST | {username: '', password: ''} | login
+/users | GET | | get all users
 
 # authorization
 - use auth middleware to enable auth. 
-- two token created in cookie after user login. jwt token is http only, csrf token is not.
+- two token created in cookie after user login. jwt token is httsp only, csrf token is not.
 - csrf token need to be send in the request header 'x-csrf-token'
 - jwt token need to be send in cookie
