@@ -15,6 +15,7 @@ path | method | payload | describe
 /register | POST | {username: '', password: '', roles: []} | register a new user
 /login | POST | {username: '', password: ''} | login
 /users | GET | | get all users
+/userinfo | GET | | get current logined user info
 
 # authorization
 - use auth middleware to enable auth. 
