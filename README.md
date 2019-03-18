@@ -18,7 +18,7 @@ path | method | payload | describe
 /userinfo | GET | | get current logined user info
 
 # authorization
-- use auth middleware to enable auth. 
-- two token created in cookie after user login. jwt token is httsp only, csrf token is not.
-- csrf token need to be send in the request header 'x-csrf-token'
-- jwt token need to be send in cookie
+- two token created in cookie after user login. jwt token is https only, csrf token is not.
+- csrf token need to be send in the request header 'x-csrf-token'.
+- jwt token need to be send in cookie.
+- use koa-jwt and auth middleware to make authorization work. koa-jwt middleware check the jwt token, auth middleware check the csrf token.
